@@ -36,4 +36,4 @@ This project demonstrates front-end web development skills, including responsive
 This is a front-end demo project. Checkout and newsletter features are not connected to a backend.
 
 ##  Author
-Developed as a web design and front-end development project.
+Develope by Momina for learning and freelancing practice
