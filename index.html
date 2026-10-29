@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Order fresh burgers, pizza, pasta and more at Bite & Bliss. Delicious food, delivered with love.">
+  <title>Bite & Bliss | Fresh Food, Happy Mood</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="announcement-track">
+      <span>FREE DELIVERY ON ORDERS OVER Rs 2000</span><span>✦</span>
+      <span>FRESHLY MADE, ALWAYS DELICIOUS</span><span>✦</span>
+      <span>YOUR CRAVINGS, OUR PASSION</span><span>✦</span>
+      <span>FREE DELIVERY ON ORDERS OVER Rs 2000</span><span>✦</span>
+      <span>FRESHLY MADE, ALWAYS DELICIOUS</span><span>✦</span>
+      <span>YOUR CRAVINGS, OUR PASSION</span><span>✦</span>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#home" class="logo">
+        <span class="logo-icon">B<span>+</span></span>
+        <span>Bite <em>&</em> Bliss<small>FRESH FOOD. GOOD MOOD.</small></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a class="nav-link active" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#menu">Our Menu</a></li>
+        <li><a class="nav-link" href="#about">About Us</a></li>
+        <li><a class="nav-link" href="#reviews">Reviews</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+
+      <a href="#menu" class="nav-order">
+        Order Now <span>↗</span>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="eyebrow"><span>✦</span> GOOD FOOD, GOOD MOOD</div>
+          <h1>Cravings meet<br>their <span>happily ever</span><br>after.</h1>
+          <p>From the first bite to the last, discover freshly prepared favorites made to turn ordinary moments into something delicious.</p>
+
+          <div class="hero-actions">
+            <a href="#menu" class="btn btn-primary">Explore Our Menu <span>↗</span></a>
+            <a href="#about" class="text-link">Discover our story <span>→</span></a>
+          </div>
+
+          <div class="hero-proof">
+            <div class="avatar-stack">
+              <span>😊</span><span>😋</span><span>😍</span>
+            </div>
+            <div><strong>2,500+</strong><small>Happy food lovers</small></div>
+            <div class="proof-divider"></div>
+            <div><strong>4.9/5 <span class="stars">★★★★★</span></strong><small>Customer satisfaction</small></div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-wrap">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=85"
+              alt="Juicy gourmet burger with fresh ingredients">
+          </div>
+          <div class="floating-tag tag-top"><span>✦</span><div><strong>Made fresh</strong><small>Every single day</small></div></div>
+          <div class="floating-tag tag-bottom"><span class="delivery-icon">↗</span><div><strong>Fast delivery</strong><small>Love at your doorstep</small></div></div>
+          <div class="hero-sticker">MADE WITH<br>LOVE <span>♥</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+      <div class="container feature-grid">
+        <div class="feature-item"><span class="feature-icon">✳</span><div><strong>Fresh Ingredients</strong><small>Quality in every bite</small></div></div>
+        <div class="feature-item"><span class="feature-icon">♨</span><div><strong>Made to Order</strong><small>Fresh from our kitchen</small></div></div>
+        <div class="feature-item"><span class="feature-icon">➜</span><div><strong>Fast Delivery</strong><small>Good food, right on time</small></div></div>
+        <div class="feature-item"><span class="feature-icon">♡</span><div><strong>Made with Love</strong><small>Flavor you will remember</small></div></div>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="menu-section section-padding" id="menu">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow"><span>✦</span> SOMETHING DELICIOUS</div>
+            <h2>Made to make you <span>crave.</span></h2>
+            <p>Good food, great ingredients, and flavors worth coming back for.</p>
+          </div>
+          <a href="#menu" class="text-link desktop-link">Explore all favorites ↗</a>
+        </div>
+
+        <div class="menu-toolbar">
+          <div class="category-filters" id="categoryFilters">
+            <button class="filter-btn active" data-category="All">All favorites</button>
+            <button class="filter-btn" data-category="Burgers">Burgers</button>
+            <button class="filter-btn" data-category="Pizza">Pizza</button>
+            <button class="filter-btn" data-category="Sides">Sides</button>
+            <button class="filter-btn" data-category="Drinks">Drinks</button>
+          </div>
+          <label class="search-box">
+            <span>⌕</span>
+            <input type="search" id="foodSearch" placeholder="Search dishes..." aria-label="Search dishes">
+          </label>
+        </div>
+
+        <div class="food-grid" id="foodGrid">
+          <!-- JavaScript renders food cards here -->
+        </div>
+        <p class="empty-message" id="emptyMessage" hidden>No dishes found. Try another search!</p>
+
+        <div class="menu-bottom">
+          <p>Can't decide? Your next favorite is just a bite away.</p>
+          <a href="#menu" class="btn btn-outline" id="showAllBtn">Explore our favorites <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Special offer -->
+    <section class="offer-section">
+      <div class="container offer-card">
+        <div class="offer-copy">
+          <span class="offer-label">A LITTLE EXTRA HAPPINESS</span>
+          <h2>Good food.<br><span>Better deals.</span></h2>
+          <p>Make your next meal a little more special with our signature favorites and seasonal offers.</p>
+          <a href="#menu" class="btn btn-light">Find your favorite <span>↗</span></a>
+          <small class="offer-note">Offers and prices shown are sample content.</small>
+        </div>
+        <div class="offer-image">
+          <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=900&q=85" alt="Delicious burger ready to enjoy" loading="lazy">
+          <div class="offer-stamp">LOVE<br>AT FIRST<br>BITE ♥</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about-section section-padding" id="about">
+      <div class="container about-grid">
+        <div class="about-visual">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1000&q=85" alt="Welcoming restaurant dining space" loading="lazy">
+          <div class="about-note"><span>✦</span><div><strong>Flavor is our love language.</strong><small>And everyone is invited.</small></div></div>
+        </div>
+        <div class="about-content">
+          <div class="eyebrow"><span>✦</span> OUR LITTLE STORY</div>
+          <h2>Not just food.<br>A feeling called <span>home.</span></h2>
+          <p>At Bite & Bliss, we believe good food has a way of bringing people together. That's why we focus on delicious flavors, fresh preparation, and the little details that make every meal memorable.</p>
+          <p>Whether it's a quick lunch, a family dinner, or a late-night craving, there's always something special waiting for you.</p>
+          <div class="about-stats">
+            <div><strong>100%</strong><small>Flavor focused</small></div>
+            <div><strong>Fresh</strong><small>Made to order</small></div>
+            <div><strong>Always</strong><small>Here for your cravings</small></div>
+          </div>
+          <a href="#contact" class="btn btn-primary">Get to know us <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="reviews-section section-padding" id="reviews">
+      <div class="container">
+        <div class="section-heading centered">
+          <div class="eyebrow"><span>✦</span> WORD ON THE STREET</div>
+          <h2>Love is best served <span>with food.</span></h2>
+          <p>A few kind words from our happy food lovers.</p>
+        </div>
+        <div class="review-grid">
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>“The food looks amazing, the menu is easy to explore, and the burger is a must-try for anyone who loves a good bite!”</p>
+            <div class="review-person"><span class="review-avatar">S</span><div><strong>Sarah M.</strong><small>Food lover</small></div><span class="quote-mark">“</span></div>
+          </article>
+          <article class="review-card review-featured">
+            <div class="stars">★★★★★</div>
+            <p>“A lovely place for comfort food. The flavors, presentation, and attention to detail make the experience feel special.”</p>
+            <div class="review-person"><span class="review-avatar">A</span><div><strong>Ahmed R.</strong><small>Happy customer</small></div><span class="quote-mark">“</span></div>
+          </article>
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>“From the first look to the last bite, everything feels inviting. Definitely the kind of menu that makes you hungry!”</p>
+            <div class="review-person"><span class="review-avatar">M</span><div><strong>Maya K.</strong><small>Regular guest</small></div><span class="quote-mark">“</span></div>
+          </article>
+        </div>
+        <p class="review-disclaimer">Demo testimonials for this portfolio project. Replace with verified customer reviews before publishing.</p>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+      <div class="container newsletter-inner">
+        <div><span class="eyebrow"><span>✦</span> A LITTLE TASTE OF JOY</span><h2>Good things come to your inbox.</h2><p>Get menu updates, delicious inspiration, and special offers.</p></div>
+        <form class="newsletter-form" id="newsletterForm">
+          <label class="sr-only" for="newsletterEmail">Your email address</label>
+          <input type="email" id="newsletterEmail" placeholder="Enter your email address" required>
+          <button class="btn btn-primary" type="submit">Sign me up ↗</button>
+          <small id="newsletterMessage" aria-live="polite">No spam, just the good stuff.</small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <a href="#home" class="logo footer-logo"><span class="logo-icon">B<span>+</span></span><span>Bite <em>&</em> Bliss<small>FRESH FOOD. GOOD MOOD.</small></span></a>
+        <p>Good food brings people together. We're here to make every bite feel like a little celebration.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">ig</a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
+          <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="TikTok">tk</a>
+        </div>
+      </div>
+      <div class="footer-column"><h3>Explore</h3><a href="#home">Home</a><a href="#menu">Our Menu</a><a href="#about">Our Story</a><a href="#reviews">Reviews</a></div>
+      <div class="footer-column"><h3>Customer Care</h3><a href="#contact">Contact Us</a><a href="#menu">Order Online</a><a href="#contact">FAQs</a><a href="#contact">Delivery Information</a></div>
+      <div class="footer-column footer-contact"><h3>Say Hello</h3><p><span>✉</span> hello@biteandbliss.example</p><p><span>☎</span> +92 300 1234567</p><p><span>⌖</span> Your city, Pakistan</p><p><span>◷</span> Mon – Sun: 12 PM – 11 PM</p></div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="currentYear"></span> Bite & Bliss. Crafted with <span class="heart">♥</span> and a little extra flavor.</p>
+      <div><a href="#contact">Privacy Policy</a><a href="#contact">Terms of Service</a></div>
+      <a href="#home" class="back-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Cart drawer -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-header"><div><span class="eyebrow">YOUR ORDER</span><h2>Your basket <span id="cartItemCount">(0)</span></h2></div><button class="cart-close" id="cartClose" aria-label="Close cart">×</button></div>
+    <div class="cart-items" id="cartItems"><p class="cart-empty">Your basket is looking a little hungry. Add something delicious!</p></div>
+    <div class="cart-footer"><div class="cart-total"><span>Subtotal</span><strong id="cartTotal">Rs0.00</strong></div><small>Delivery fees and taxes are not included.</small><button class="btn btn-primary checkout-btn" id="checkoutBtn">Continue to checkout ↗</button><p class="checkout-message" id="checkoutMessage" aria-live="polite"></p></div>
+  </aside>
+
+  <button class="cart-fab" id="cartOpen" aria-label="Open shopping cart">🛍 <span>Basket</span><b id="cartCount">0</b></button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
